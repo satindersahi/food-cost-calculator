@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    
+<head>
+    <h1>Food cost Calculator</h1>
+    
+</head>
+<body>
+   <label> Name</label> <input id="input" onfocus="this.value=''" type=text /><br></br>
+   <h2>step 1</h2>
+    <p><b>Calculate price of units from big case or bulk quaninty</b></p>
+    <div class ="container">
+    <div id="priceforone">
+      <label>Price of whole case</label> <input id="input1" onfocus="this.value=''" type=text /><br></br>
+       <label>how many units in case</label>  <input id="input2" onfocus="this.value=''" type=text /><br></br>
+      <label>price as per units</label>  <input id="input3" onfocus="this.value=''" type=text /><br></br>
+</div>
+<label>total= $</label><input type="text" id="result"/>
+<button onclick="ans();">=</button><br></br>
+
+<h2>step 2</h2>
+
+
+       <label>value1 = </label> <input type="text" id="value1" name="value1" value=""/><br></br>
+        <label>value2 =</label> <input type="text" id="value2" name="value2" value=""/><br></br>
+        <label>value3 =</label> <input type="text" id="value3" name="value3" value=""/><br></br>
+        <input type="button" name="Sumbit" value="Click here" onclick="addNumbers()"/>
+        <label>Answer = </label><input type="text" id="answer" name="answer" value=""/>
+
+<h2>step 3</h2>
+<h2>labour cost</h2>
+<div>
+    <label>enter how many minutes employee work </label>  <input id="input4" onfocus="this.value=''" type=text /><br></br>
+    <label>enter employee's pay per hour</label>  <input id="input5" onfocus="this.value=''" type=text /><br></br>
+</div>
+<label>total= $</label><input type="text" id="labourcst"/>
+<button onclick="labourAnswer();">=</button>
+
+<h2>step 4</h2>
+<h2>Estimate selling price with profit</h2>
+<label>how much profit you want in %</label><input id="input6" onfocus="this.value=''" type=text /><br></br>
+
+<label>total price = $</label><input type="text" id="sellingPrice"/>
+<button id="txt" onclick="price();">=</button>
+</div>
+
+
+
+
+
+
+<script src="cal.js"></script>  
+</body>
+</html>
